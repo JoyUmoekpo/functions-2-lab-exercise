@@ -133,6 +133,22 @@ const uniq = (arr, callBack) => {
   callBack(arr);
 }
 
+//Different solutions below
+const unique = (arr, cb) => {
+  // let mySet = new Set();
+  // let arrSet = mySet.add(arr)
+  // let mySpread = [...mySet];
+
+  // let uniqueArray = [...new Set(arr)];
+
+  // let uniqueArray = arr.filter((name, index) => {
+  //     return arr.indexOf(name) == index;
+  // });
+
+  cb(uniqueArray);
+};
+
+
 /*
   Invoke the uniq function, passing in the names array from above and a callback function.
   The callback function should take in one parameter called uniqArr.

@@ -49,6 +49,7 @@ const postTaxPrices = prices.map(function(price){
 
 console.log(postTaxPrices);
 
+console.log('-----------------------------------');
 
 ////////// PROBLEM 3 //////////
 
@@ -66,7 +67,7 @@ const populations = [8175133, 3792621, 2695598, 2100263];
 // CODE HERE
 // const totalPopulation //  = populations.reduce(/* Provide Your Callback Here */)
 
-
+console.log('-----------------------------------');
 
 ////////// PROBLEM 4 //////////
 
@@ -91,7 +92,7 @@ const monstersInYourPocket = [{"monster":"Bulbabunny","CP":156},{"monster":"Bulb
 // CODE HERE
 // const myStrongest // = monstersInYourPocket.filter(/* Provide Your Callback Here */)
 
-
+console.log('-----------------------------------');
 
 ////////// PROBLEM 5 //////////
 
@@ -107,8 +108,11 @@ const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax
 */
 
 // CODE HERE
+let totals = orders.map(order => order.price * (1 + order.tax))
 
+console.log(totals);
 
+console.log('-----------------------------------');
 
 ////////// PROBLEM 6 //////////
 
@@ -127,3 +131,5 @@ const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
 */
 
 // CODE HERE
+
+console.log('-----------------------------------');
