@@ -7,7 +7,7 @@
 ////////// PROBLEM 1 //////////
 
 // Do not edit the code below.
-const mixedNumbers = [6,3,1,7,5,2,6,8,9,4,2,7,9,3,1,8,4,3];
+const mixedNumbers = [6, 3, 1, 7, 5, 2, 6, 8, 9, 4, 2, 7, 9, 3, 1, 8, 4, 3];
 // Do not edit the code above.
 
 /*
@@ -18,7 +18,7 @@ const mixedNumbers = [6,3,1,7,5,2,6,8,9,4,2,7,9,3,1,8,4,3];
 */
 
 // CODE HERE
-const evenNumbers = mixedNumbers.filter(function(even) {
+const evenNumbers = mixedNumbers.filter(function (even) {
   return (even % 2 === 0);
 })
 
@@ -43,7 +43,7 @@ const prices = [15.00, 23.00, 78.00, 34.00, 12.00, 86.00, 12.00, 79.00, 32.00];
 */
 
 // CODE HERE
-const postTaxPrices = prices.map(function(price){
+const postTaxPrices = prices.map(function (price) {
   return price * 1.07
 })
 
@@ -65,7 +65,7 @@ const populations = [8175133, 3792621, 2695598, 2100263];
 */
 
 // CODE HERE
-const totalPopulation = populations.reduce(/* Provide Your Callback Here */ (a, c) => a + c);
+const totalPopulation = populations.reduce( /* Provide Your Callback Here */ (a, c) => a + c);
 
 console.log(totalPopulation);
 
@@ -74,15 +74,91 @@ console.log('-----------------------------------');
 ////////// PROBLEM 4 //////////
 
 // Do not edit the code below.
-const monstersInYourPocket = [{"monster":"Bulbabunny","CP":156},{"monster":"Bulbabunny","CP":135},
-{"monster":"Bulbabunny","CP":250},{"monster":"Ponylopse","CP":277},{"monster":"Ponylopse","CP":184},
-{"monster":"Pikadoughnet","CP":207},{"monster":"Bulbabunny","CP":139},{"monster":"Pikadoughnet","CP":47},
-{"monster":"Pikadoughnet","CP":175},{"monster":"WaterHorsia","CP":26},{"monster":"Ponylopse","CP":19},
-{"monster":"Pikadoughnet","CP":218},{"monster":"Charaflier","CP":101},{"monster":"WaterHorsia","CP":96},
-{"monster":"Pikadoughnet","CP":253},{"monster":"Sandmush","CP":146},{"monster":"Bulbabunny","CP":247},
-{"monster":"Charaflier","CP":55},{"monster":"Bulbabunny","CP":72},{"monster":"Pikadoughnet","CP":300},
-{"monster":"Sandmush","CP":262},{"monster":"Sandmush","CP":25},{"monster":"Charaflier","CP":215},
-{"monster":"Ponylopse","CP":125},{"monster":"Bulbabunny","CP":178}];
+const monstersInYourPocket = [{
+    "monster": "Bulbabunny",
+    "CP": 156
+  }, {
+    "monster": "Bulbabunny",
+    "CP": 135
+  },
+  {
+    "monster": "Bulbabunny",
+    "CP": 250
+  }, {
+    "monster": "Ponylopse",
+    "CP": 277
+  }, {
+    "monster": "Ponylopse",
+    "CP": 184
+  },
+  {
+    "monster": "Pikadoughnet",
+    "CP": 207
+  }, {
+    "monster": "Bulbabunny",
+    "CP": 139
+  }, {
+    "monster": "Pikadoughnet",
+    "CP": 47
+  },
+  {
+    "monster": "Pikadoughnet",
+    "CP": 175
+  }, {
+    "monster": "WaterHorsia",
+    "CP": 26
+  }, {
+    "monster": "Ponylopse",
+    "CP": 19
+  },
+  {
+    "monster": "Pikadoughnet",
+    "CP": 218
+  }, {
+    "monster": "Charaflier",
+    "CP": 101
+  }, {
+    "monster": "WaterHorsia",
+    "CP": 96
+  },
+  {
+    "monster": "Pikadoughnet",
+    "CP": 253
+  }, {
+    "monster": "Sandmush",
+    "CP": 146
+  }, {
+    "monster": "Bulbabunny",
+    "CP": 247
+  },
+  {
+    "monster": "Charaflier",
+    "CP": 55
+  }, {
+    "monster": "Bulbabunny",
+    "CP": 72
+  }, {
+    "monster": "Pikadoughnet",
+    "CP": 300
+  },
+  {
+    "monster": "Sandmush",
+    "CP": 262
+  }, {
+    "monster": "Sandmush",
+    "CP": 25
+  }, {
+    "monster": "Charaflier",
+    "CP": 215
+  },
+  {
+    "monster": "Ponylopse",
+    "CP": 125
+  }, {
+    "monster": "Bulbabunny",
+    "CP": 178
+  }
+];
 // Do not edit the code above.
 
 /*
@@ -92,7 +168,7 @@ const monstersInYourPocket = [{"monster":"Bulbabunny","CP":156},{"monster":"Bulb
 */
 
 // CODE HERE
-const myStrongest = monstersInYourPocket.filter(/* Provide Your Callback Here */ function(monster) {
+const myStrongest = monstersInYourPocket.filter( /* Provide Your Callback Here */ function (monster) {
   return monster.CP > 200
 })
 
@@ -103,10 +179,41 @@ console.log('-----------------------------------');
 ////////// PROBLEM 5 //////////
 
 // Do not edit code below.
-const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax":0.11},
-{"price":80,"tax":0.11},{"price":69,"tax":0.06},{"price":68,"tax":0.14},
-{"price":72,"tax":0.14},{"price":51,"tax":0.09},{"price":89,"tax":0.15},
-{"price":48,"tax":0.13}];
+const orders = [{
+    "price": 15,
+    "tax": 0.09
+  }, {
+    "price": 42,
+    "tax": 0.07
+  }, {
+    "price": 56,
+    "tax": 0.11
+  },
+  {
+    "price": 80,
+    "tax": 0.11
+  }, {
+    "price": 69,
+    "tax": 0.06
+  }, {
+    "price": 68,
+    "tax": 0.14
+  },
+  {
+    "price": 72,
+    "tax": 0.14
+  }, {
+    "price": 51,
+    "tax": 0.09
+  }, {
+    "price": 89,
+    "tax": 0.15
+  },
+  {
+    "price": 48,
+    "tax": 0.13
+  }
+];
 // Do not edit code above.
 
 /*
@@ -123,13 +230,74 @@ console.log('-----------------------------------');
 ////////// PROBLEM 6 //////////
 
 // Do not edit the code below.
-const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
-{"owner":"Bob","price":73},{"owner":"Barry","price":57},{"owner":"Barry","price":128},
-{"owner":"Bob","price":119},{"owner":"Barry","price":133},{"owner":"Barry","price":27},
-{"owner":"Barry","price":138},{"owner":"Bob","price":68},{"owner":"Bob","price":50},
-{"owner":"Barry","price":9},{"owner":"Bob","price":123},{"owner":"Bob","price":135},
-{"owner":"Barry","price":30},{"owner":"Barry","price":129},{"owner":"Barry","price":38},
-{"owner":"Bob","price":133},{"owner":"Barry","price":109},{"owner":"Bob","price":115}];
+const purchases = [{
+    "owner": "Barry",
+    "price": 103
+  }, {
+    "owner": "Bob",
+    "price": 75
+  },
+  {
+    "owner": "Bob",
+    "price": 73
+  }, {
+    "owner": "Barry",
+    "price": 57
+  }, {
+    "owner": "Barry",
+    "price": 128
+  },
+  {
+    "owner": "Bob",
+    "price": 119
+  }, {
+    "owner": "Barry",
+    "price": 133
+  }, {
+    "owner": "Barry",
+    "price": 27
+  },
+  {
+    "owner": "Barry",
+    "price": 138
+  }, {
+    "owner": "Bob",
+    "price": 68
+  }, {
+    "owner": "Bob",
+    "price": 50
+  },
+  {
+    "owner": "Barry",
+    "price": 9
+  }, {
+    "owner": "Bob",
+    "price": 123
+  }, {
+    "owner": "Bob",
+    "price": 135
+  },
+  {
+    "owner": "Barry",
+    "price": 30
+  }, {
+    "owner": "Barry",
+    "price": 129
+  }, {
+    "owner": "Barry",
+    "price": 38
+  },
+  {
+    "owner": "Bob",
+    "price": 133
+  }, {
+    "owner": "Barry",
+    "price": 109
+  }, {
+    "owner": "Bob",
+    "price": 115
+  }
+];
 // Do not edit the code above.
 
 /*
@@ -138,7 +306,15 @@ const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
 
 // CODE HERE
 
-let bobsTotal = purchases.filter(purchase => purchase.owner === 'Bob').reduce((a, c) => a + c.price, 0)
+// const filteredArr = numArray.filter(element => element % 2 === 0)
+
+const bobsTotal = purchases.filter(purchase => purchase.owner === "Bob")
+
 console.log(bobsTotal);
+
+// let bobsTotal = purchases.filter(purchase => purchase.owner === 'Bob').reduce((a, c) => a + c.price, 0)
+// console.log(bobsTotal);
+
+
 
 console.log('-----------------------------------');

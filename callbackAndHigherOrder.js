@@ -1,4 +1,4 @@
-////////// PROBLEM 1 //////////
+//////// PROBLEM 1 ////////
 
 /*
   Write a function called multiply that takes in three parameters: two numbers and a callback function.  
