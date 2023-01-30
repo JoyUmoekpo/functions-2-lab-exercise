@@ -256,6 +256,15 @@ const getUserById = (arr, id, callBack) => {
     */
 
     // CODE HERE
+const addingFactory = x => y => x + y
+
+const addingFactory = (x) => (y) => x + y;
+
+const addingFactory = x => {
+    return function(y) {
+        return x + y
+    }
+}
 
     /*
       Now that you have addingFactory, you can create other
@@ -271,6 +280,8 @@ const getUserById = (arr, id, callBack) => {
 
     // CODE HERE
 
+const addTen = addingFactory(10)
+
     /*
       Now the inner function is stored in the addTen variable! 
 
@@ -282,6 +293,9 @@ const getUserById = (arr, id, callBack) => {
     */
 
     // CODE HERE
+
+console.log(addTen(333))
+console.log(addTen(737373))
 
     /*
       Let's make another function from the addingFactory. 
@@ -295,3 +309,8 @@ const getUserById = (arr, id, callBack) => {
     */
 
     // CODE HERE
+
+const addSeven = addingFactory(7)
+
+console.log(addSeven(7))
+console.log(addSeven(777))
